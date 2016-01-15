@@ -1,0 +1,41 @@
+{
+  "name": "grunt-pagesJson_gettext",
+  "description": "Conversion d'un fichier JSON de routage en fichier JS.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Xen3r0/pagesJson_gettext",
+  "author": {
+    "name": "xen3r0",
+    "email": "m.santisteban@gammasoftware.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Xen3r0/pagesJson_gettext.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xen3r0/pagesJson_gettext/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Xen3r0/pagesJson_gettext/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
