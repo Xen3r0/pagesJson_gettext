@@ -1,11 +1,11 @@
 {
   "name": "grunt-pages-json-gettext",
-  "description": "Conversion d'un fichier JSON de routage en fichier JS.",
-  "version": "0.1.1",
+  "description": "Convert JSON file for states to JS file.",
+  "version": "0.1.2",
   "homepage": "https://github.com/Xen3r0/pagesJson_gettext",
   "author": {
     "name": "xen3r0",
-    "email": "m.santisteban@gammasoftware.fr"
+    "email": "manuel.santisteban@yahoo.fr"
   },
   "repository": {
     "type": "git",
