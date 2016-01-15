@@ -1,6 +1,6 @@
 # grunt-pagesJson_gettext
 
-> Conversion d'un fichier JSON de routage en fichier JS.
+> Convert JSON file for states to JS file.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -37,46 +37,23 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.moduleName
 Type: `String`
-Default value: `',  '`
+Default value: `'winlassie'`
 
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
+Angular module name
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+In this example, the default options are used to do something with whatever. So if the `testing` file has the content state JSON, the generated result would be Javascript Array.
 
 ```js
 grunt.initConfig({
   pagesJson_gettext: {
     options: {},
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  pagesJson_gettext: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
+      'dest/pages.js': ['src/pages.json', '....'],
     },
   },
 });

@@ -1,7 +1,7 @@
 {
-  "name": "grunt-pagesJson_gettext",
+  "name": "grunt-pages-json-gettext",
   "description": "Conversion d'un fichier JSON de routage en fichier JS.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/Xen3r0/pagesJson_gettext",
   "author": {
     "name": "xen3r0",
