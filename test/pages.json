@@ -1,0 +1,315 @@
+[
+  {
+    "name": "404",
+    "title": "Page introuvable",
+    "topNavigation": false,
+    "hidden": true,
+    "views": {
+      "contentCommon": "404.html",
+      "params": ["error"]
+    }
+  },
+  {
+    "name": "administratif",
+    "title": "Administratif",
+    "licence": "ADM",
+    "topNavigation": true,
+    "pages": [
+      {
+        "name": "employes",
+        "title": "Gestion des employés",
+        "views": {
+          "content": "employes.html"
+        },
+        "icone": "fa fa-users",
+        "pages": [
+          {
+            "name": "view",
+            "title": "Visualisation d'un employé",
+            "views": {
+              "content": "employes_view.html",
+              "params": ["id"]
+            },
+            "niveauAction": "view"
+          },
+          {
+            "name": "create",
+            "title": "Création d'un employé",
+            "views": {
+              "content": "employes_edit.html"
+            },
+            "niveauAction": "create"
+          },
+          {
+            "name": "edit",
+            "title": "Modification d'un employé",
+            "views": {
+              "content": "employes_edit.html",
+              "params": ["id"]
+            },
+            "niveauAction": "edit"
+          },
+          {
+            "name": "delete",
+            "title": "Suppression d'un employé",
+            "views": {
+              "content": "employes_view.html",
+              "params": ["id"]
+            },
+            "niveauAction": "delete"
+          },
+          {
+            "name": "export",
+            "title": "Exportation des employés",
+            "views": {
+              "content": "employes_view.html",
+              "params": ["id"]
+            },
+            "niveauAction": "export"
+          }
+        ]
+      },
+      {
+        "name": "organisation",
+        "title": "Organisation",
+        "icone": "fa fa-archive",
+        "pages": [
+          {
+            "name": "structures",
+            "title": "Structures",
+            "icone": "fa fa-archive",
+            "views": {
+              "content": "structures.html"
+            },
+            "pages": [
+              {
+                "name": "view",
+                "title": "Visualisation d'une structure",
+                "views": {
+                  "content": "structures_view.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "view"
+              },
+              {
+                "name": "create",
+                "title": "Création d'une structure",
+                "views": {
+                  "content": "structures_edit.html"
+                },
+                "niveauAction": "create"
+              },
+              {
+                "name": "edit",
+                "title": "Modification d'une structure",
+                "views": {
+                  "content": "structures_edit.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "edit"
+              }
+            ]
+          },
+          {
+            "name": "entites",
+            "title": "Entités",
+            "icone": "fa fa-archive",
+            "views": {
+              "content": "entites.html"
+            },
+            "pages": [
+              {
+                "name": "view",
+                "title": "Visualisation d'une entité",
+                "views": {
+                  "content": "entites_view.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "view"
+              },
+              {
+                "name": "create",
+                "title": "Création d'une entité",
+                "views": {
+                  "content": "entites_edit.html"
+                },
+                "niveauAction": "create"
+              },
+              {
+                "name": "edit",
+                "title": "Modification d'une entité",
+                "views": {
+                  "content": "entites_edit.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "edit"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "table_associees",
+        "title": "Tables associees",
+        "icone": "fa fa-database",
+        "pages": [
+          {
+            "name": "categories",
+            "title": "Catégories d'entités",
+            "icone": "",
+            "views": {
+              "content": "categories.html"
+            },
+            "pages": [
+              {
+                "name": "view",
+                "title": "Visualisation d'une catégorie",
+                "views": {
+                  "content": "categories_view.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "view"
+              },
+              {
+                "name": "create",
+                "title": "Création d'une catégorie",
+                "views": {
+                  "content": "categories_edit.html"
+                },
+                "niveauAction": "create"
+              },
+              {
+                "name": "edit",
+                "title": "Modification d'une catégorie",
+                "views": {
+                  "content": "categories_edit.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "edit"
+              }
+            ]
+          },
+          {
+            "name": "qualificatifs",
+            "title": "Qualificatifs d'entités",
+            "icone": "",
+            "views": {
+              "content": "qualificatifs.html"
+            },
+            "pages": [
+              {
+                "name": "view",
+                "title": "Visualisation d'un qualificatif",
+                "views": {
+                  "content": "qualificatifs_view.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "view"
+              },
+              {
+                "name": "create",
+                "title": "Création d'un qualificatif",
+                "views": {
+                  "content": "qualificatifs_edit.html"
+                },
+                "niveauAction": "create"
+              },
+              {
+                "name": "edit",
+                "title": "Modification d'un qualificatif",
+                "views": {
+                  "content": "qualificatifs_edit.html",
+                  "params": ["id"]
+                },
+                "niveauAction": "edit"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dashboard",
+    "title": "Dashboard",
+    "licence": "DASH",
+    "topNavigation": true
+  },
+  {
+    "name": "expositions",
+    "title": "Expositions",
+    "licence": "EXPO",
+    "topNavigation": true
+  },
+  {
+    "name": "filtres",
+    "title": "Filtres",
+    "topNavigation": false,
+    "views": {
+      "content": "filtres.html"
+    },
+    "pages": [
+      {
+        "name": "create",
+        "title": "Création d'un filtre",
+        "views": {
+          "content": "filtres_edit.html"
+        },
+        "niveauAction": "create"
+      },
+      {
+        "name": "edit",
+        "title": "Modification d'un filtre",
+        "views": {
+          "content": "filtres_edit.html",
+          "params": ["id"]
+        },
+        "niveauAction": "edit"
+      }
+    ]
+  },
+  {
+    "name": "utilisateurs",
+    "title": "Utilisateurs",
+    "licence": "",
+    "topNavigation": false,
+    "pages": [
+      {
+        "name": "niveaux",
+        "title": "Niveaux d'accès",
+        "content": "niveaux.html",
+        "views": {
+          "content": "niveaux.html"
+        },
+        "pages": [
+          {
+            "name": "view",
+            "title": "Visualisation d'un niveau d'accès",
+            "views": {
+              "content": "niveaux_view.html",
+              "params": ["id"]
+            },
+            "niveauAction": "view"
+          },
+          {
+            "name": "create",
+            "title": "Création d'un niveau d'accès",
+            "views": {
+              "content": "niveaux_edit.html"
+            },
+            "niveauAction": "create"
+          },
+          {
+            "name": "edit",
+            "title": "Modification d'un niveau d'accès",
+            "views": {
+              "content": "niveaux_edit.html",
+              "params": ["id"]
+            },
+            "niveauAction": "edit"
+          }
+        ]
+      }
+    ]
+  }
+]
