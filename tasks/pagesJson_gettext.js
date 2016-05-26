@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         // Iterate over all specified file groups.
         this.files.forEach(function (f) {
             // Concat specified files.
-            var src = f.src.filter(function (filepath) {
+            var files = f.src.filter(function (filepath) {
                 // Warn on and remove invalid source files (if nonull was set).
                 if (!grunt.file.exists(filepath)) {
                     grunt.log.warn('Source file "' + filepath + '" not found.');
@@ -32,12 +32,14 @@ module.exports = function (grunt) {
             });
 
             // Write the destination file.
-            src = JSON.parse(src);
-            var titles = parseJson(src);
-
             var dest = '(function (){angular.module(\'' + options.moduleName + '\').run([\'gettext\', function (gettext) {var titles = [];';
-            titles.forEach(function (title, index) {
-                dest += 'titles[' + index + '] = gettext(\'' + addslashes(title) + '\');';
+            files.forEach(function (content) {
+                var src = JSON.parse(content);
+                var titles = parseJson(src);
+
+                titles.forEach(function (title, index) {
+                    dest += 'titles[' + index + '] = gettext(\'' + addslashes(title) + '\');';
+                });
             });
             dest += '}]);})();';
 
